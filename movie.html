@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Movie Search</title>
+</head>
+
+<body>
+  <header class="header center" id="header">
+    <a href="index.html" class="logo"></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">TV Series</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Trending</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">My list</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Watch by language</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="movie center" id="movies_container">
+    <picture class="movie__poster">
+      <img src="" alt="" srcset="">
+    </picture>
+    <article class="movie__info">
+      <div class="movie__description">
+        <h3 class="movie__title"></h3>
+        <div class="movie__essential">
+          <span class="movie__year"></span>
+          <span class="movie__runtime"></span>
+
+          <span class="movie__rating">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="m323-205 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178ZM233-80l65-281L80-550l288-25 112-265 112 265 288 25-218 189 65 281-247-149L233-80Zm247-355Z" />
+            </svg>
+
+          </span>
+        </div>
+        <p class="movie__genre"></p>
+        <p class="movie__plot"></p>
+      </div>
+      <div class="movie__cast">
+        <p class="movie__director">Director: <span> </span></p>
+        <p class="movie__actors">Actors: <span> </span></p>
+      </div>
+    </article>
+  </main>
+  <footer class="header center" id="header">
+    <p class="copyright">Notflix Inc. 1997-2023</p>
+  </footer>
+  <script src="js/movie.js" type="module"></script>
+</body>
+
+</html>

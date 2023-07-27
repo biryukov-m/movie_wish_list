@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Movie Search</title>
+</head>
+
+<body>
+  <header class="header center" id="header">
+    <a href="index.html" class="logo"></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">TV Series</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Trending</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">My list</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Watch by language</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form class="search center" action="" method="get" id="search-movie">
+    <input type="search" name="search" class="search__title" required placeholder="Title">
+    <input type="number" name="year" min="1920" max="2040" class="search__year" placeholder="Year">
+    <select name="type" class="search__type">
+      <option value="movie">Movie</option>
+      <option value="series">Series</option>
+      <option value="episode">Episode</option>
+    </select>
+    <button type="submit">Search</button>
+    <span id="error"></span>
+  </form>
+  <main class="grid center" id="movies_container"></main>
+  <footer class="header center" id="header">
+    <p class="copyright">Notflix Inc. 1997-2023</p>
+  </footer>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

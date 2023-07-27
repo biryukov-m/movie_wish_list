@@ -1,0 +1,63 @@
+@import 'movie';
+@import 'card';
+@import 'header';
+@import 'search';
+@font-face {
+  font-family: Netflix Sans;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #131313;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: minmax(60px, auto) 1fr minmax(60px, auto);
+}
+
+.center {
+  padding-left: calc(50vw - 595px);
+  padding-right: calc(50vw - 595px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  p {
+    padding: 6px;
+    color: #bcbcbc;
+    font-family: Netflix Sans, sans-serif;
+    font-size: 0.8rem;
+  }
+}
+
+#error {
+  display: block;
+  font-family: 'Righteous', sans-serif;
+  font-size: 14px;
+  color: #cc1313;
+  height: 20px;
+}

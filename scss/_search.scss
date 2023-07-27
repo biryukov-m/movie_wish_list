@@ -1,0 +1,67 @@
+.search {
+  display: inline-flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 7px;
+  margin-top: 20px;
+
+  input {
+    display: inline-block;
+    padding: 7px 14px 7px 7px;
+    height: 34px;
+    line-height: 34px;
+    font-family: Netflix Sans, sans-serif;
+    font-size: 1.1rem;
+    background: #313131;
+    color: rgba(255, 255, 255, 0.99);
+    border: none;
+    border-radius: 4px;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  select {
+    display: inline-block;
+    padding: 7px 14px 7px 7px;
+    height: 34px;
+    line-height: 34px;
+    font-family: Netflix Sans, sans-serif;
+    font-size: 1.1rem;
+    background: #313131;
+    color: rgba(255, 255, 255, 0.99);
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .search__title {
+    width: 214px;
+  }
+
+  button {
+    background: #313131;
+    color: rgba(255, 255, 255, 0.99);
+    height: 34px;
+    line-height: 34px;
+    align-items: center;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    padding: 0.8rem;
+    position: relative;
+    user-select: none;
+    font-family: Netflix Sans, sans-serif;
+    font-size: 1rem;
+    &:hover {
+      color: #313131;
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
